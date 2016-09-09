@@ -7,7 +7,7 @@ Requirements
 ------------
 
 - Bash: to run scripts to safely mount and unmount the encrypted directory
-- encfs: to encrypt the contents of a directory
+- [EncFS][1]: to encrypt the contents of a directory
 
 Be careful when performing major upgrades to your operating system.
 If shared libraries used by `encfs` are replaced or removed,
@@ -37,7 +37,7 @@ and `encfs` will ask you to create it:
 
 >     The directory "/path/to/project/encrypt-dir-encfs/raw/" does not exist. Should it be created? (y,n)
 
-Say 'y'. There will be one more question:
+Say `y`. There will be one more question:
 
 >     Creating new encrypted volume.
 >     Please choose from one of the following options:
@@ -128,3 +128,5 @@ It's possible to change the password using the `encfsctl` command, for example:
 You must know the current password to do this.
 If you lost the current password,
 the data is not recoverable.
+
+[1]: https://en.wikipedia.org/wiki/EncFS
